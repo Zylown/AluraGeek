@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/login/navLogin.css" />
-    <link rel="stylesheet" href="../css/login/headerLogin.css" />
+    <link rel="stylesheet" href="../css/addProducto/navAddProducto.css" />
+    <link rel="stylesheet" href="../css/addProducto/mainAddProducto.css" />
     <link rel="stylesheet" href="../css/section.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <title>AluraGeek: Login</title>
+    <title>AluraGeek: Agregar Producto</title>
   </head>
   <body>
     <nav class="nav__alurageek">
       <div class="nav__alurageek--left">
         <div class="nav__container__logo">
-          <a href="../index.html" class="nav__a">
+          <a href="index.html" class="nav__a">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"
@@ -62,7 +62,10 @@
           </svg>
         </div>
       </div>
-      <div class="container__search--icon">
+      <div class="nav__button--login">
+        <a href="screens/login.html" class="a__button--login"
+          >Menu Administrador</a
+        >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -77,16 +80,25 @@
         </svg>
       </div>
     </nav>
-    <header>
-      <div class="header__container--login">
-        <p>Iniciar Sesión</p>
-        <form class="form__login" action="productos.html">
-          <input placeholder="Escriba su correo electrónico" type="email" required/>
-          <input placeholder="Escriba su contraseña" type="password" required/>
-          <button type="submit">Entrar</button>
+    <main>
+      <div class="container__add--product">
+        <p>Agregar nuevo producto</p>
+        <form class="form__producto" action="#">
+          <input required placeholder="URL de imagen" type="text" />
+          <input required placeholder="Categoría" type="text" />
+          <input required placeholder="Nombre del producto" type="text" />
+          <input required placeholder="Precio del producto" type="number" />
+          <textarea
+            placeholder="Descripción del producto"
+            name="descripcion"
+            id="descripcion"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button type="submit">Agregar</button>
         </form>
       </div>
-    </header>
+    </main>
     <section>
       <div class="section__container">
         <div class="section__container--left">
