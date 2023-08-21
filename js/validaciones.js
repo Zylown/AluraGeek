@@ -97,8 +97,6 @@ function validarCorreo(input) {
   }else if (!regexCorreo.test(correo)) {
     mensaje = "Este correo no tiene el formato correcto";//Mensaje modal de HTML
     //input.setCustomValidity("El correo no tiene el formato correcto");
-  } /*else {
-    input.setCustomValidity("");
-  }*/
+  }
   input.setCustomValidity(mensaje);
 }
